@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Item {
+  id: ID
+  name: String!
+  quantity: String!
+  quantity_units: String!
+}
+
+type Query {
+  """select all items"""
+  findAll: [Item!]!
+}
+
+type Mutation {
+  """create one item"""
+  createItem(createItem: CreateItemInput!): Item!
+}
+
+input CreateItemInput {
+  name: String!
+  quantity: Int!
+  quantity_units: Int!
+}
